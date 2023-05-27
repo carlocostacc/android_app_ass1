@@ -6,11 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-3dp" />
+
 
     <Button
         android:id="@+id/button_settings"
