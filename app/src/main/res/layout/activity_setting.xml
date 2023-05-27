@@ -26,11 +26,11 @@
 
         <ImageButton
             android:id="@+id/back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="22dp"
-            tools:src="?attr/homeAsUpIndicator"
+            tools:src="@drawable/back_arrow_icon"
             android:background="@null"
             android:scaleType="fitCenter"/>
 
