@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--divided the item oof the recycler view in 3 sections the first one ios the name of the counter
+second one is the semicolon ie it never changes and the third is the amount of time the event has
+ occurred -->
+
+    <TextView
+        android:id="@+id/data_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Counter name"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/data_semicolon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_semicolon"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_toEndOf="@id/data_name"/>
+
+    <TextView
+        android:id="@+id/data_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Counter name"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_toEndOf="@id/data_semicolon" />
+</RelativeLayout>

@@ -5,6 +5,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
         android:id= "@+id/counter_name"
         android:textSize="25dp"
         android:textColor="@color/black"
@@ -18,7 +19,8 @@
         android:layout_below="@id/counter_name"
         android:id= "@+id/set_name"
         android:textSize="20dp"
+        android:inputType="text"
         android:textColor="@color/black"
-        android:text="Name goes here"
+        android:hint="@string/counter_name_hint"
         />
 </RelativeLayout>

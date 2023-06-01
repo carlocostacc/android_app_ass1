@@ -5,8 +5,8 @@ public class Item {
     String value ;
 
     public Item(String counter_name, String value) {
-        this.counter_name = counter_name;
-        this.value = value;
+        this.counter_name = value;
+        this.value = counter_name;
     }
 
     public String getCounter_name() {

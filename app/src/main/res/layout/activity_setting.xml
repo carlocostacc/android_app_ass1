@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".SettingActivity">
 
 
@@ -25,22 +26,142 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/back_button"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="22dp"
-            tools:src="@drawable/back_arrow_icon"
+            android:id="@+id/back_settings_Button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:background="@null"
-            android:scaleType="fitCenter"/>
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_arrow_icon" />
 
 
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:layout_editor_absoluteX="109dp"
-        android:id="@+id/recycler_view"/>
+        android:paddingVertical="20dp"
+        android:id= "@+id/counter_name_1"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Counter name"
+        android:paddingLeft="30dp"
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id= "@+id/set_name_1"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/counter_name_1"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="@color/black"
+        android:hint="@string/counter_name_hint"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:id= "@+id/counter_name_2"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Counter name"
+        android:paddingLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/set_name_1"
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id= "@+id/set_name_2"
+        android:textSize="20dp"
+        android:maxLength="20"
+        app:layout_constraintTop_toBottomOf="@id/counter_name_2"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:hint="@string/counter_name_hint"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:id= "@+id/counter_name_3"
+        app:layout_constraintTop_toBottomOf="@id/set_name_2"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Counter name"
+        android:paddingLeft="30dp"
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id= "@+id/set_name_3"
+        android:maxLength="20"
+        app:layout_constraintTop_toBottomOf="@id/counter_name_3"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:hint="@string/counter_name_hint"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:id= "@+id/counter_name_4"
+        app:layout_constraintTop_toBottomOf="@id/set_name_3"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Counter name"
+        android:paddingLeft="30dp"
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/counter_name_4"
+        android:id= "@+id/set_name_4"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:hint="@string/counter_name_hint"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_name_4" />
+
+    <ImageButton
+        android:id="@+id/overflow_settings"
+        android:layout_width="41dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/overflow" />
+
+    <TextView
+        android:id="@+id/edit_settings_text"
+        android:layout_width="86dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/edit_settings"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

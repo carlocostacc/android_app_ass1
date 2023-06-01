@@ -3,12 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.SettingActivity">
 
 <item
-        android:id="@+id/edit_settings"
-        android:orderInCategory="1"
-        android:title="@string/edit_settings"
+    android:id="@+id/edit_settings"
+    android:orderInCategory="1"
+    android:title="@string/edit_settings"
+    app:showAsAction="never"
          />
 
 </menu>
